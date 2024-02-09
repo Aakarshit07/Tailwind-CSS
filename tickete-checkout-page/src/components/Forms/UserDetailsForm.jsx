@@ -20,7 +20,7 @@ function UserDetailsForm() {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 my-4"> 
-                    <div className={`flex items-center ${baseInputFeildCSS} w-1/2`}>
+                    <div className={`flex items-center ${baseInputFeildCSS} w-full md:w-1/2`}>
                         <PiGlobeHemisphereWestFill className="text-neutral-500" />
                         <select className="px-1 bg-transparent w-full outline-none text-neutral-500">
                             <option value="">Country code</option>
@@ -29,12 +29,12 @@ function UserDetailsForm() {
                         </select>
                     </div>
 
-                    <input className={`${baseInputFeildCSS} w-1/2 outline-none placeholder-neutral-500`} type="number" required placeholder="Phone number" maxLength={10}/>
+                    <input className={`${baseInputFeildCSS} w-full md:w-1/2 outline-none placeholder-neutral-500`} type="number" required placeholder="Phone number" maxLength={10}/>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 my-4">
-                    <input className={`bg-transparent ${baseInputFeildCSS} w-1/2 placeholder-neutral-500`} type="email" required placeholder="Email"/>
-                    <input  className={`bg-transparent ${baseInputFeildCSS} w-1/2 placeholder-neutral-500`} type="email" required placeholder="Confirm email"/>
+                    <input className={`bg-transparent ${baseInputFeildCSS} w-full md:w-1/2 placeholder-neutral-500`} type="email" required placeholder="Email"/>
+                    <input  className={`bg-transparent ${baseInputFeildCSS} w-full md:w-1/2 placeholder-neutral-500`} type="email" required placeholder="Confirm email"/>
                 </div>
 
             </form>
